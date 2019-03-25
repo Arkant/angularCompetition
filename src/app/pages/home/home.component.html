@@ -1,8 +1,9 @@
-<form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Favorite food" value="Sushi">
-    </mat-form-field>
-  </form>
-  <mat-card>Simple card</mat-card>
-
+<div class="container">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu class="align-left" #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+</div>
+  
 <user-component></user-component>

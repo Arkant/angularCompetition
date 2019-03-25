@@ -1,0 +1,9 @@
+<div class="container">
+  <form class="example-form">
+        <mat-form-field class="example-half-width">
+          <input [(ngModel)]= "username" class="center" matInput placeholder="GitHub Account" name="inp" value="">
+        </mat-form-field>
+      </form>
+    <mat-card class="mat-card">Simple card</mat-card>
+    <button (click)="showUser(username)"> Show</button>
+</div>
