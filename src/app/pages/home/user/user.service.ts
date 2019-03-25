@@ -12,10 +12,10 @@ export class UserService {
 
   }
   getUsers(username) {
-    this.http.get(`${API_URL}/users/${username}`)
-      .subscribe((res) => {
-        console.log(res);
-        return res;
-      });
+    if (username === undefined) return ;
+    return this.http.get(`${API_URL}/users/${username}`);
+  }
+  getReposList(reposUrl) {
+    return this.http.get(`${reposUrl}`);
   }
 }

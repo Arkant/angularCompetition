@@ -1,3 +1,4 @@
+import { MatTableModule } from '@angular/material/table';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list'; 
 import { UserService } from './user/user.service';
 import { FormsModule } from '@angular/forms';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     MatButtonModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    MatListModule,
+    MatTableModule
   ],
   exports: [HomeComponent, UserComponent],
   providers: [UserService],
