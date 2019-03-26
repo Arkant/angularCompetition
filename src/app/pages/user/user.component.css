@@ -7,16 +7,6 @@
   margin: 0 auto;
 }
 
-.container {
-  border: 1px solid #673AB7;
-  width: 300px;
-  margin: 0 auto;
-  display: flex;
-  padding: 20px;
-  justify-content: space-around;
-  height: 45px;
-}
-
 .size-card {
   width: 200px;
   height: 200px;
@@ -34,12 +24,11 @@ mat-card-header {
   margin-bottom: 20px;
 }
 
-button {
-  width: 80px;
-}
-
-table {
-  width: 100%;
+.ban {
+  background-color: rgb(187, 53, 53);
+  width: 100px;
+  transition: 1s linear;
+  color: white;
 }
 
 .ban :hover {
@@ -47,11 +36,9 @@ table {
   transition: 1.5s;
 }
 
-.ban {
-  background-color: rgb(147, 132, 173);
-  width: 100px;
-  transition: 1s linear;
-  color: white;
+
+mat-card {
+  border: 1px solid #673AB7;
 }
 
 .purple:hover {
@@ -62,7 +49,25 @@ table {
 
 .purple {
   background-color: rgb(147, 132, 173);
-  width: 100px;
   transition: 1s linear;
   color: white;
+}
+
+button {
+  width: 150px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-container {
+  position: relative;
+  top: 120px;
+}
+
+.mat-card[_ngcontent-c4] {
+  width: 40%;
+  margin: 0 auto;
 }

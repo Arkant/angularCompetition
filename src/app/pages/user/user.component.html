@@ -1,0 +1,30 @@
+<div class="user-container">
+  <div *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
+      <mat-card *ngIf="user" class="size-card" class="example-card">
+        <div class="left">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image padding-0-15">
+                    <img mat-card-image src={{user.avatar_url}} alt="Photo of a user">
+                </div>
+                <mat-card-title>{{ user.login }}</mat-card-title>
+                <mat-card-subtitle><a href="">{{ user.html_url }}</a></mat-card-subtitle>
+              </mat-card-header>
+              
+              <mat-card-content>
+                Name: {{user.name}}<br>
+                Followers: {{user.followers}}<br>
+                Following: {{user.following}}
+              </mat-card-content>
+              <div class="btn-container">
+                <mat-card-actions>
+                  <button class="ban"(click)="banUser()" mat-button>BAN</button>
+                </mat-card-actions>
+                <mat-card-actions>
+                  <button class="purple" (click)="getListOfRepos()" mat-button>List of repositories</button>
+                </mat-card-actions>
+              </div>
+        </div>
+      </mat-card>
+</div>
