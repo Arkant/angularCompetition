@@ -7,11 +7,13 @@ import { UserComponent } from './pages/user/user.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'user', component: UserComponent},
   {
-    path: 'user/:list', 
-    component: UserListComponent,
-    canActivate: [IsAllowedUser]
+    path: 'user',
+    component: UserComponent,
+    canActivateChild: [IsAllowedUser],
+    children: [
+      { path: 'list', component: UserListComponent } 
+    ]
   },
   {path: '**', redirectTo: '/home' }
 ];

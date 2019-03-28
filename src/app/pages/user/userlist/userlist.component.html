@@ -1,6 +1,6 @@
 <div *ngIf="repos" class="right">
   <table mat-table [dataSource]="repos" class="mat-elevation-z8">
-      <!-- Item Column -->
+      
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef> Name </th>
         <td mat-cell *matCellDef="let repo"> {{repo.name}} </td>

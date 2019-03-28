@@ -1,5 +1,6 @@
 import { SharingService } from './../../../shared/sharing.service';
 import { Component } from '@angular/core';
+import { IList } from 'src/app/core/interfaces/list.interface';
 
 @Component({
   selector: 'userlist-component',
@@ -7,16 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./userlist.component.css']
 })
 export class UserListComponent {
-  reposUrl: 'string';
-  repos: { };
+  repos: IList;
   displayedColumns: string[] = ['name', 'link'];
 
-  constructor(private sharingService: SharingService) {
-    
+  constructor(private sharingService: SharingService) {    
   }
 
-  ngOnInit(){
-    this.repos = this.sharingService.getData();
-    console.log(this.repos);
+  ngOnInit(): void {
+    if (this.sharingService.getData()){
+      this.repos = this.sharingService.getData();
+    }
   }
 }

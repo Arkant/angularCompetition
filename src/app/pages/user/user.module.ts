@@ -11,7 +11,8 @@ import { UserService } from './user.service';
 import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import { UserListComponent } from '../user/userlist/userlist.component';
-
+import { AppRoutingModule } from 'src/app/app.routing.module';
+ 
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UserListComponent } from '../user/userlist/userlist.component';
     MatGridListModule,
     FormsModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    AppRoutingModule
   ],
   exports: [UserComponent, UserListComponent],
   providers: [UserService],

@@ -1,7 +1,4 @@
 <div class="user-container">
-  <div *ngIf="errorMessage">
-    {{errorMessage}}
-  </div>
       <mat-card *ngIf="user" class="size-card" class="example-card">
         <div class="left">
             <mat-card-header>
@@ -11,7 +8,6 @@
                 <mat-card-title>{{ user.login }}</mat-card-title>
                 <mat-card-subtitle><a href="">{{ user.html_url }}</a></mat-card-subtitle>
               </mat-card-header>
-              
               <mat-card-content>
                 Name: {{user.name}}<br>
                 Followers: {{user.followers}}<br>
@@ -27,4 +23,7 @@
               </div>
         </div>
       </mat-card>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
 </div>
