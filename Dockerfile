@@ -11,7 +11,7 @@ WORKDIR /usr/app
 COPY /nginx.conf /etc/nginx/conf.d/app.conf
 COPY . .
 
-EXPOSE 80
+EXPOSE 90
 
 RUN npm install
 RUN npm run build
