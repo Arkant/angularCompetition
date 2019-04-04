@@ -1,8 +1,9 @@
-<form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Favorite food" value="Sushi">
-    </mat-form-field>
+<div class="container">
+  <form class="example-form">
+        <mat-form-field class="example-half-width">
+          <input required [(ngModel)]= "username" class="center" matInput placeholder="GitHub Account" name="inp" value="">
+          
+        </mat-form-field>
   </form>
-  <mat-card>Simple card</mat-card>
-
-<user-component></user-component>
+  <button (click)="btnClick(username)" mat-button class="purple"> Show user</button> 
+</div>

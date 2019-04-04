@@ -1,0 +1,73 @@
+.example-form {
+  text-align: center;
+}
+
+.mat-card {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.size-card {
+  width: 200px;
+  height: 200px;
+}
+
+.mat-card-header-text {
+  margin: 0 auto !important;
+}
+
+.padding-0-15 {
+  padding: 0 15px;
+}
+
+mat-card-header {
+  margin-bottom: 20px;
+}
+
+.ban {
+  background-color: rgb(187, 53, 53);
+  width: 100px;
+  transition: 1s linear;
+  color: white;
+}
+
+.ban :hover {
+  background-color: rgb(255, 0, 0);
+  transition: 1.5s;
+}
+
+
+mat-card {
+  border: 1px solid #673AB7;
+}
+
+.purple:hover {
+  background-color: #673AB7;
+  /* color: white; */
+  transition: 1.5s;
+}
+
+.purple {
+  background-color: rgb(147, 132, 173);
+  transition: 1s linear;
+  color: white;
+}
+
+button {
+  width: 150px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-container {
+  position: relative;
+  top: 120px;
+}
+
+.mat-card[_ngcontent-c4] {
+  width: 40%;
+  margin: 0 auto;
+}
